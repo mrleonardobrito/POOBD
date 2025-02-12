@@ -57,6 +57,7 @@ public class ClienteDao {
 
             pst.close();
             connection.close();
+            System.out.println("Produto cadastrado com sucesso!");
         } catch (ClassNotFoundException e) {
             throw new RuntimeException(e);
         } catch (SQLException e) {

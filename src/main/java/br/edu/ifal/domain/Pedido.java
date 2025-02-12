@@ -8,7 +8,7 @@ public class Pedido {
     private String cpfCliente;
     private double valorTotal;
     private List<ItemPedido> itens;
-    
+
     public Pedido(int id, String cpfFuncionario, String cpfCliente, double valorTotal, List<ItemPedido> itens) {
         this.id = id;
         this.cpfFuncionario = cpfFuncionario;
@@ -35,5 +35,11 @@ public class Pedido {
     
     public List<ItemPedido> getItens() {
         return itens;
+    }
+
+    @Override
+    public String toString() {
+        return "Pedido {id=" + id + ", cpfFuncionario=" + cpfFuncionario + ", cpfCliente=" + cpfCliente
+                + ", valorTotal=" + valorTotal + "}";
     }
 }

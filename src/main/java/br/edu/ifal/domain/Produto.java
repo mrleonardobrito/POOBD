@@ -12,7 +12,7 @@ public class Produto {
         this.valorUnidade = valorUnidade;
         this.quantidade = quantidade;
     }
-    
+
     public int getId() {
         return id;
     }
@@ -33,4 +33,9 @@ public class Produto {
         this.quantidade = quantidade;
     }
 
+    @Override
+    public String toString() {
+        return "Produto {id=" + id + ", nome=" + nome + ", valorUnidade=" + valorUnidade + ", quantidade=" + quantidade
+                + "}";
+    }
 }
